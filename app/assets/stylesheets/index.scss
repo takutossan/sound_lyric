@@ -1,0 +1,61 @@
+.title_contents {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background-image: image-url('newspaper.jpeg');
+}
+
+
+.sound_lyrics {
+  height: 20px;
+  padding: 26px 0 0px 200px;
+  font-size: 32px;
+  font-weight: bolder ;
+  color: #FFFFFF;
+}
+
+.lists-right {
+  padding: 0 80px 0 0;
+  font-size: 20px;
+  display: flex;
+  justify-content: right;
+}
+
+.login {
+  color: #FFFFFF;
+  padding: 0px 63px 0 0;
+  text-decoration: none;
+}
+
+.login:hover {
+  color: #333;
+}
+
+.sign-up {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.sign-up:hover {
+  color: #333;
+}
+
+.user-name {
+  color: #FFFFFF;
+  padding: 0px 63px 0 0;
+  text-decoration: none;
+}
+
+.user-name:hover {
+  color: #333;
+}
+
+.logout {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.logout:hover {
+  color: #333;
+}
