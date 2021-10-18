@@ -1,0 +1,22 @@
+<div class= "new_lyrics">
+
+<h1>new lyric </h1>
+
+<%= form_with model: @lyrics, local: true do |f| %>
+
+  <div class= "lyric_title"> 
+    title
+  </div>
+  <div>
+    <%= f.text_field :title, class:"lyric_title", id:"lyric_title" %>
+  </div>
+
+  <div class= "lyrics"> 
+    lyrics
+  </div>
+  <div>
+    <%= f.text_area :lyric, class:"lyrics", id:"lyrics", placeholder: "歌詞を書く" %>
+  </div>
+  <% end %>
+
+</divq>

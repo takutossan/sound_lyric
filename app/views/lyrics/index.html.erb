@@ -1,8 +1,8 @@
 <div class= "title_contents">
 
-  <h1 class= "sound_lyrics" >sound lyrics</h1>
-
   <ul class='lists-right'>
+    <li><%= link_to "sound_lyrics", new_lyric_path, class:"sound_lyrics" %></li>
+
       <% if user_signed_in? %>
         <li><%= link_to current_user.name, root_path, class: "user-name" %> </li>
         <li><%= link_to "ログアウト", destroy_user_session_path, class: "logout"  %> </li>
@@ -10,6 +10,6 @@
         <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
         <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
       <% end %>
-      </ul>
+  </ul>
 
   </div>
