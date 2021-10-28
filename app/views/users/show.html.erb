@@ -1,0 +1,8 @@
+<div class="contents row">
+  <p><%= @name %>さんの投稿一覧</p>
+  <% @lyrics.each do |lyric| %>
+      <p><%= lyric.title %></p>
+      <span class="name"><%= lyric.lyric %></span>
+    </div>
+  <% end %>
+</div>

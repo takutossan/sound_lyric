@@ -1,0 +1,56 @@
+.page_title {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  color:#FFFFFF;
+  padding: 10px 0px 5px 35px;
+}
+
+.lyric_contents {
+  display: flex;
+  justify-content: center;
+}
+
+.lyric_title {
+  width: 100%;
+  padding:2px 25px;
+  border-radius: 5px;
+  border: 1px solid #DDD;
+  font-size: 13px;
+  resize: none;
+}
+
+.lyrics {
+  width: 100%;
+  padding: 12px 26px 400px;
+  border-radius: 5px;
+  border: 1px solid #DDD;
+  font-size: 16px;
+  resize: none;
+}
+
+.post-btn-contents {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+
+.post-btn {
+  background: #DDD ;
+  border: 1px solid #DDD ;
+  color: #FFF ;
+  padding: 15px 75px ;
+  text-decoration: none ;
+  border-radius: 80% ;
+  margin: 0 0 0 6px ;
+}
+
+.back-btn {
+  border: 1px solid	#BBB ;
+  background-color:	#BBB;
+  color: #FFF ;
+  padding: 15px 55px ;
+  text-decoration: none ;
+  border-radius: 80% ;
+  margin: 0 0 0 6px ;
+}

@@ -1,22 +1,30 @@
 <div class= "title_contents">
 
-<h1>new lyric </h1>
+  <div class= "page_title">new lyric </div>
 
-<%= form_with model: @lyrics, local: true do |f| %>
+  <div class= "lyric_contents">
 
-  <div class= "lyric_title"> 
-    title
-  </div>
-  <div>
-    <%= f.text_field :title, class:"lyric_title", id:"lyric_title" %>
-  </div>
+  <%= form_with model: @lyric, local: true do |f| %>   
 
-  <div class= "lyrics"> 
-    lyrics
+    <div class= "page_title"> 
+      title
+    </div>
+    <div>
+      <%= f.text_field :title, class:"lyric_title", id:"lyric_title" %>
+    </div>
+
+    <div class= "page_title"> 
+      lyrics
+    </div>
+    <div>
+      <%= f.text_area :lyric, class:"lyrics", id:"lyrics", placeholder: "歌詞を書く..." %>
+    </div>
+    <div class="post-btn-contents">
+      <%= f.submit "投稿する" ,class:"post-btn" %>
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
+    </div>
+    <% end %>
+
   </div>
-  <div>
-    <%= f.text_area :lyric, class:"lyrics", id:"lyrics", placeholder: "歌詞を書く" %>
-  </div>
-  <% end %>
 
 </div>
