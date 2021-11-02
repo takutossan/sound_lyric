@@ -1,8 +1,14 @@
-<div class="contents row">
-  <p><%= @name %>さんの投稿一覧</p>
-  <% @lyrics.each do |lyric| %>
-      <p><%= lyric.title %></p>
-      <span class="name"><%= lyric.lyric %></span>
-    </div>
-  <% end %>
+<div class="title_contents">
+
+  <div class="contents-row">
+    <h1><%= link_to @name, root_path, class:"contents-row"%>さんの歌詞一覧</h1>
+    <% @lyrics.each do |lyric| %>
+      <div class="page_title">[title]</div>
+        <div class="page_title"><%= lyric.title %></div>
+      <div class="page_title">[lyric]</div>
+        <div class="page_title"><%= lyric.lyric %></div>
+      </div>
+    <% end %>
+  </div>
+
 </div>
